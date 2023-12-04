@@ -17,13 +17,20 @@
             padding: 20px;
             margin-bottom: 20px;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div id="flashcard-container">
-        <h1 id="flashcard-word">Hi Beca, from Dennis</h1>
+        <h1 id="flashcard-word">Hi Beca, I still haven't listened to inconsolable</h1>
     </div>
-    <button onclick="showNextWord()">Next Word</button>
+    
+    <button id="startButton" onclick="startFlashcards()">ikay, I forgive u</button>
+    <button id="recognizeButton" class="hidden" onclick="showNextWord()">I recognize this</button>
+    <button id="wtfButton" class="hidden" onclick="showNextWord()">wtf</button>
 
     <script src="script.js"></script>
 </body>
