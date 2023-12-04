@@ -33,6 +33,14 @@ function shuffleArray(array) {
 // Shuffle the vocabulary list initially
 shuffleArray(vocabularyList);
 
+// Function to start the flashcards
+function startFlashcards() {
+    document.getElementById("startButton").style.display = "none";
+    document.getElementById("recognizeButton").style.display = "inline";
+    document.getElementById("wtfButton").style.display = "inline";
+    showNextWord();
+}
+
 // Function to display a random word
 function showNextWord() {
     const flashcardWord = document.getElementById("flashcard-word");
